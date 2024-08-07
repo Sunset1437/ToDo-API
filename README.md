@@ -19,7 +19,7 @@
   POST /api/users - создать нового пользователя<br />
   PUT /api/users/{id} - обновить пользователя по id<br />
   DELETE /api/users/{id} - удалить пользователя<br />
-3)Создайть контроллер TaskController:<br />
+3) Создайть контроллер TaskController:<br />
   GET /api/tasks - получить список всех задач<br />
   GET /api/tasks/{id} - получить конкретную задачу по ID<br />
   POST /api/tasks - создать новую задачу<br />
