@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ToDo_APIv1.Database;
+using ToDo_APIv1.Models;
 
 namespace ToDo_APIv1
 {
@@ -12,6 +15,7 @@ namespace ToDo_APIv1
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("UsersConnection")));
 
             var app = builder.Build();
 
